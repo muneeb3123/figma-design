@@ -370,7 +370,7 @@ nav :last-child {
   flex-direction: column;
   gap: 20px;
   padding-top: 40px;
-  padding-right: 3vw;
+  /* padding-right: 3vw; */
 }
 
 .s-m {
@@ -1047,6 +1047,54 @@ background-clip: text;
 
   .contact {
     padding: 5rem 30vw 0;
+  }
+
+}
+
+@media (min-width: 5000px) {
+  header {
+    padding: 7px 37vw;
+  }
+
+  .view-collection {
+    width: 10vw;
+  }
+
+  .suit-collection {
+    padding: 4rem 37vw;
+  }
+
+
+  .collections {
+    padding: 5rem 37vw;
+  }
+
+  .hero-section {
+    padding: 25vh 37vw;
+  }
+
+  .mens-collection {
+    padding: 10px 37vw 5rem;
+  }
+
+  .banner {
+    padding: 0 37vw;
+  }
+
+  .about {
+    padding: 6rem 37vw;
+  }
+
+  .review-section {
+    padding: 0 0 5rem 37vw;
+  }
+
+  .blog {
+    padding: 5rem 37vw;
+  }
+
+  .contact {
+    padding: 5rem 37vw 0;
   }
 
 }
