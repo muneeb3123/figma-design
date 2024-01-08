@@ -27,9 +27,8 @@ header {
   padding: 7px 6rem;
   background-color: #abc2da;
   position: fixed;
-  left: 12vw;
+  left: 0;
   top: 0;
-  width: 100vw;
   z-index: 100;
 }
 
@@ -295,6 +294,10 @@ nav :last-child {
   max-width: 309px;
 }
 
+.bg-q {
+  flex: 1;
+}
+
 .banner-content {
   display: flex;
   flex-direction: column;
@@ -542,7 +545,7 @@ nav :last-child {
   font-size: 2.5rem;
   padding-bottom: 10px;
   width: 100%;
-  max-width: 400px;
+  max-width: 308px;
 }
 
 .bg-text p {
@@ -550,7 +553,7 @@ nav :last-child {
   line-height: 2.5rem;
   text-align: justify;
   width: 100%;
-  max-width: 400px;
+  max-width: 308px;
 }
 
 .contact {
@@ -618,14 +621,16 @@ background-clip: text;
 
 .contact-social {
   display: flex;
-  padding: 5rem 23vw;
-  gap: 10vw;
+  padding: 5rem 6rem;
+  gap: 15rem;
+  justify-content: center;
 }
 
 .cx-r {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  max-width: 235px;
 }
 
 .cx-r h3 {
@@ -637,7 +642,6 @@ background-clip: text;
 .cx-r p {
   font-size: 1.8rem;
   color: #fff;
-  width: 10vw;
 }
 
 .social-icons i {
@@ -648,7 +652,7 @@ background-clip: text;
 
 .table {
   display: flex;
-  gap: 15vw;
+  gap: 21rem;
 }
 
 .table ul {
@@ -681,6 +685,10 @@ background-clip: text;
   font-weight: 600;;
 }
 
+.bg-text {
+  flex: 1;
+}
+
 .suit-collection,
 header,
 .collections,
@@ -690,8 +698,7 @@ header,
 .about,
 .review-section,
 .blog,
-.contact,
-.contact-social {
+.contact {
   width: 100%;
   max-width: 1442px;
   margin: 40px auto;
@@ -728,6 +735,10 @@ header {
     padding-top: 0;
   }
 
+  .banner p {
+    max-width: 400px;
+  }
+
 }
 
 @media (max-width:1120px) {
@@ -746,6 +757,14 @@ header {
 
   .men-side {
     padding-top: 5rem;
+  }
+
+  .banner p {
+    max-width: 400px;
+  }
+
+  .b-h {
+    display: none;
   }
 }
 
@@ -775,7 +794,7 @@ header {
   }
 
   .banner {
-    padding: 0 5vw;
+    padding: 16vh 5vw;
   }
 
   .about {
@@ -789,14 +808,14 @@ header {
   .blog {
     padding: 5rem 5vw;
   }
-
-  .contact {
-    padding: 5rem 5vw 0;
-  }
 }
 
 @media (max-width:768px) {
   .sx-hide {
+    display: none;
+  }
+
+  .table {
     display: none;
   }
 
@@ -830,6 +849,22 @@ header {
   .collection-items {
     flex-wrap: wrap;
   }
+
+  .banner p {
+    max-width: 350px;
+  }
+
+  .b-h {
+    display: block;
+  }
+
+  .blog-content {
+    flex-direction: column;
+  }
+
+  .bg-text p {
+    max-width: 361px;
+  }
 }
 
 @media (max-width: 645px) {
@@ -839,6 +874,10 @@ header {
 
   .s-m {
     display: flex;
+  }
+
+  .banner p {
+    max-width: 300px;
   }
 }
 
@@ -855,6 +894,19 @@ header {
   display: none;
 }
 
+.banner p {
+  max-width: 250px;
+}
+
+
+.bg-text p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+.bg-text h3 {
+  font-size: 2rem;
+}
 }
 
 @media (max-width: 462px) {
@@ -879,5 +931,12 @@ header {
   .mens-collection {
     display: grid;
     grid-template-columns: 1fr 4fr;
+  }
+}
+
+@media (min-width: 1442px) {
+
+  header {
+    left:calc((100% - 1442px) / 2);
   }
 }
