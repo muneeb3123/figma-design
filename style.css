@@ -290,6 +290,11 @@ nav :last-child {
   max-width: 800px;
 }
 
+.bg-content img {
+  width: 20vw;
+  max-width: 309px;
+}
+
 .banner-content {
   display: flex;
   flex-direction: column;
