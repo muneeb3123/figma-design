@@ -385,7 +385,6 @@ nav :last-child {
   gap: 20px;
   padding-top: 40px;
   flex: 1;
-  /* padding-right: 3vw; */
 }
 
 .s-m {
@@ -420,64 +419,14 @@ nav :last-child {
 }
 
 .review-section {
-  padding: 10rem 0 10rem 6rem;
   display: flex;
-  background-color: #bb2f2f;
-  background-image: url("./assets/Ellipse\ 7.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  position: relative;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: red;
+  height: 75rem;
 }
 
-.rw-pic {
-  /* background-image: url("./assets/Ellipse\ 7.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  position: relative; */
-}
-
-.rw-s {
-  display: flex;
-  flex-direction: column;
-  gap: 15rem;
-  padding-top: 8rem;
-}
-
-.rw-s h3 {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #fff;
-}
-
-.rw-s p {
-  font-size: 1.3rem;
-  color: #fff;
-  width: 100%;
-  text-align: justify;
-  max-width: 552px;
-}
-
-.rw-name {
-  position: absolute;
-  bottom: 6vh;
-  left: 20vw;
-}
-
-.rw-name h3 {
-  font-size: 2.8rem;
-  font-weight: 700;
-  color: #fff;
-}
-
-.rw-name p {
-  font-size: 1.5rem;
-  color: #fff;
-  text-align: justify;
-}
 
 .review-content {
   display: flex;
@@ -718,6 +667,66 @@ header {
 .sx-2 .sx-img img {
   width: 100%;
   max-width: 719px;
+}
+
+.left-column {
+  width: 45%;
+  padding: 10rem 6rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.right-column {
+  position: relative;
+  flex: 1;
+}
+
+.rw-name {
+  position: absolute;
+  bottom: 10rem;
+  right: 35rem;
+}
+
+.rw-name h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.rw-name p {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.review-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.review-text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.review-text .star-img img {
+  width: 2.5rem;
+}
+
+.reviewer-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 853px;
+  height: 774px;
 }
 
 @media (max-width:1200px) {
