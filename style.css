@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -422,15 +423,21 @@ nav :last-child {
   padding: 10rem 0 10rem 6rem;
   display: flex;
   background-color: #bb2f2f;
-}
-
-.rw-pic {
   background-image: url("./assets/Ellipse\ 7.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
   position: relative;
+}
+
+.rw-pic {
+  /* background-image: url("./assets/Ellipse\ 7.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative; */
 }
 
 .rw-s {
