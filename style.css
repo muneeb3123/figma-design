@@ -141,7 +141,7 @@ nav :last-child {
 }
 
 .collection-option a {
-  padding: 15px 4rem;
+  padding: 15px 3rem;
   width: 22rem;
   border: 2px solid red;
   border-radius: 15px;
@@ -931,8 +931,8 @@ header {
   }
 
   .collection-option a {
-    padding: 16px 0rem;
-    width: 15rem;
+    padding: 16px 0;
+    width: 20rem;
 }
 
 .see-more {
