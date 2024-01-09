@@ -366,7 +366,7 @@ nav :last-child {
 }
 
 .sx-img {
-  flex: 1;
+  width: 50%;
 }
 
 .sx-img img {
@@ -385,6 +385,7 @@ nav :last-child {
   gap: 20px;
   padding-top: 40px;
   flex: 1;
+  padding-left: 6rem;
 }
 
 .s-m {
@@ -512,7 +513,7 @@ nav :last-child {
   max-width: 308px;
 }
 
-.contact {
+ .contact {
   padding: 5rem 0 0;
   display: flex;
   flex-direction: column;
@@ -580,7 +581,7 @@ background-clip: text;
   padding: 5rem 6rem;
   gap: 15rem;
   justify-content: center;
-}
+} 
 
 .cx-r {
   display: flex;
@@ -660,6 +661,10 @@ header,
   margin: 40px auto;
 }
 
+.contact {
+  margin: 40px auto 0;
+}
+
 header {
   margin: 0 auto;
 }
@@ -721,13 +726,27 @@ header {
   width: 2.5rem;
 }
 
+
 .reviewer-image {
   position: absolute;
   top: 0;
   right: 0;
   width: 853px;
   height: 774px;
+  height: auto;
 }
+
+.im-h {
+  display: none;
+}
+
+@media (max-width:1442px) {
+  .reviewer-image {
+    width: calc(853px + (100vw - 1442px) * 0.5);
+  max-height: calc(774px + (100vw - 1442px) * 0.5);
+  }
+}
+
 
 @media (max-width:1200px) {
   html {
@@ -950,9 +969,14 @@ header {
   }
 }
 
+
 @media (min-width: 1442px) {
 
   header {
     left:calc((100% - 1442px) / 2);
+  }
+
+  body {
+    background-color: #f4f2ee;
   }
 }
