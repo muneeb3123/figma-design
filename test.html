@@ -4,31 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic HTML with JavaScript on Replit</title>
-    <link rel="stylesheet" href="text.css">
+    <link rel="stylesheet" href="te">
 </head>
 <body>
+<div class="daud"></div>
 
  <script>
-
-let obj = {
-  name: 'John',
-  age: 30,
-  isMarried: false
-};
-
-  let div = document.createElement('div');
-  div.setAttribute('class', 'container');
-  let heading = Object.assign(document.createElement('h1'), {textContent: obj.name, className: 'heading'});
-
-  div.appendChild(heading);
-  let paragraph = document.createElement('p');
-  paragraph.textContent = obj.age;
-  div.appendChild(paragraph);
-  let span = document.createElement('span');
-  span.textContent = obj.isMarried;
-  paragraph.appendChild(span);
-
-  document.body.appendChild(div);
+  function daus() {
+    let a = 10;
+    return a;
+}
+let store = daus()
+ console.log(store);
 </script>
 
 </body>
